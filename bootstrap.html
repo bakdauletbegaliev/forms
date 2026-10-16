@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Contact Form | Forms & Validation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html">Forms<span class="brand-dot">.</span>Lab</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Task 0</a></li>
+          <li class="nav-item"><a class="nav-link" href="validation.html">Task 1</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="bootstrap.html">Task 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Task 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="registration.html">Task 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container content-wrap">
+    <div class="heading">
+      <p class="eyebrow">FRONT-END DEVELOPMENT · ASSIGNMENT 4</p>
+      <h1>Bootstrap Contact Form</h1>
+      <p class="subtitle">Task 2 — Rebuild the contact form with Bootstrap components and a responsive grid.</p>
+    </div>
+
+    <section class="form-panel">
+      <h2 class="section-title">Contact our team</h2>
+      <p class="text-muted mb-4">A responsive layout with helpful placeholders and descriptions.</p>
+      
+      <form data-demo-form>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="bName">Full name</label>
+            <input type="text" class="form-control" id="bName" name="name" placeholder="Alex Smith" required>
+            <div class="form-text">Enter the name you want us to use.</div>
+          </div>
+          
+          <div class="col-md-6">
+            <label class="form-label" for="bEmail">Email address</label>
+            <input type="email" class="form-control" id="bEmail" name="email" placeholder="alex@example.com" required>
+            <div class="form-text">We'll use this only for the reply.</div>
+          </div>
+          
+          <div class="col-12">
+            <label class="form-label" for="bSubject">Subject</label>
+            <input type="text" class="form-control" id="bSubject" name="subject" placeholder="How can we help?" required>
+          </div>
+          
+          <div class="col-12">
+            <label class="form-label" for="bMessage">Message</label>
+            <textarea class="form-control" id="bMessage" name="message" rows="5" placeholder="Tell us a little more..." required></textarea>
+          </div>
+          
+          <div class="col-12">
+            <button class="btn btn-primary px-4" type="submit">Send message</button>
+            <div class="form-status mt-3" aria-live="polite"></div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <p class="below-note">Bootstrap classes used: <code>form-control</code>, <code>form-label</code>, <code>form-text</code>, <code>row</code>, <code>col-md-6</code>, and <code>g-3</code>.</p>
+  </main>
+
+  <footer class="page-footer container">
+    <span>Assignment 4 · Forms and Validation</span>
+    <span>HTML · CSS · Bootstrap · JavaScript</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
